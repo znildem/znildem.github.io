@@ -103,7 +103,11 @@
             min-height: 340px;
             border-radius: 20px;
             background:
-                radial-gradient(circle at 30% 30%, rgba(85, 199, 212, 0.35), transparent 35%),
+                radial-gradient(
+                    circle at 30% 30%,
+                    rgba(85, 199, 212, 0.35),
+                    transparent 35%
+                ),
                 linear-gradient(135deg, #10243c, #163d56);
             border: 1px solid rgba(98, 214, 227, 0.3);
             display: flex;
@@ -151,8 +155,13 @@
             line-height: 1.6;
         }
 
-        .team-member {
-            margin: 10px 0;
+        #team a {
+            color: #62d6e3;
+            text-decoration: underline;
+        }
+
+        #team a:hover {
+            color: #ffffff;
         }
 
         a {
@@ -200,9 +209,13 @@
         </div>
     </nav>
 
+
+    <!-- HERO / PROJECT OVERVIEW -->
+
     <section class="hero" id="overview">
 
         <div class="hero-text">
+
             <div class="hero-label">
                 AI-POWERED SKIN CANCER DETECTION
             </div>
@@ -212,63 +225,105 @@
             </h1>
 
             <p>
-                Skin cancer is one of the most common and potentially fatal cancers worldwide,
-                making early detection especially important. This project aims to develop an
-                accessible mobile application that uses machine learning to analyze skin lesion
-                images and provide preliminary real-time predictions of whether a lesion may be
-                benign or malignant. The app is also intended to help users monitor changes in
-                their skin health over time while encouraging appropriate medical consultation
-                when needed.
+                Skin cancer is one of the most common and potentially fatal
+                cancers worldwide, making early detection especially important.
+                This project aims to develop an accessible mobile application
+                that uses machine learning to analyze skin lesion images and
+                provide preliminary real-time predictions of whether a lesion
+                may be benign or malignant. The app is also intended to help
+                users monitor changes in their skin health over time while
+                encouraging appropriate medical consultation when needed.
             </p>
 
             <a class="hero-button" href="#team">
                 Meet the Project Team
             </a>
+
         </div>
+
 
         <div class="hero-visual">
+
             <div>
                 <h3>Mobile + Machine Learning</h3>
+
                 <p>
                     Image capture, lesion analysis, prediction visualization,
-                    and long-term skin health monitoring in one accessible system.
+                    and long-term skin health monitoring in one accessible
+                    system.
                 </p>
             </div>
+
         </div>
+
+    </section>
+
+
+    <!-- MAIN CONTENT -->
+
+    <main>
+
+        <!-- TEAM MEMBERS -->
+
         <section id="team">
+
             <h2>Team Members</h2>
-        
+
             <p>
                 <strong>Neva Ildem</strong> -
-                <a href="mailto:zildem2023@my.fit.edu">zildem2023@my.fit.edu</a>
+                <a href="mailto:zildem2023@my.fit.edu">
+                    zildem2023@my.fit.edu
+                </a>
             </p>
-        
+
             <p>
                 <strong>Sophia Zubieta</strong> -
-                <a href="mailto:szubieta2023@my.fit.edu">szubieta2023@my.fit.edu</a>
+                <a href="mailto:szubieta2023@my.fit.edu">
+                    szubieta2023@my.fit.edu
+                </a>
             </p>
-        
+
             <p>
                 <strong>Samuel Borges</strong> -
-                <a href="mailto:borgess2023@my.fit.edu">borgess2023@my.fit.edu</a>
+                <a href="mailto:borgess2023@my.fit.edu">
+                    borgess2023@my.fit.edu
+                </a>
             </p>
-        
+
             <p>
                 <strong>Elif Dila Bayrak</strong> -
-                <a href="mailto:ebayrak2025@my.fit.edu">ebayrak2025@my.fit.edu</a>
+                <a href="mailto:ebayrak2025@my.fit.edu">
+                    ebayrak2025@my.fit.edu
+                </a>
             </p>
-        </section>
-        <section id="advisor">
-            <h2>Faculty Advisor</h2>
-            <p>Dr. Zahra Nematzadeh</p>
+
         </section>
 
+
+        <!-- FACULTY ADVISOR -->
+
+        <section id="advisor">
+
+            <h2>Faculty Advisor</h2>
+
+            <p>
+                Dr. Zahra Nematzadeh
+            </p>
+
+        </section>
+
+
+        <!-- MILESTONES -->
+
         <section id="milestones">
+
             <h2>Milestones</h2>
+
             <p>
                 Project milestones, presentations, progress evaluations,
                 and supporting documents will be added as the project progresses.
             </p>
+
         </section>
 
     </main>
