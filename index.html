@@ -133,7 +133,16 @@
             margin: 50px auto;
             padding: 0 20px;
         }
-
+        .info-row {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+        
+        .info-row section {
+            margin-bottom: 0;
+        }
         section {
             background-color: #101a2a;
             color: white;
@@ -263,54 +272,56 @@
 
     <main>
 
-        <!-- TEAM MEMBERS -->
+        <!-- TEAM + FACULTY ADVISOR -->
 
-        <section id="team">
-
-            <h2>Team Members</h2>
-
-            <p>
-                <strong>Neva Ildem</strong> -
-                <a href="mailto:zildem2023@my.fit.edu">
-                    zildem2023@my.fit.edu
-                </a>
-            </p>
-
-            <p>
-                <strong>Sophia Zubieta</strong> -
-                <a href="mailto:szubieta2023@my.fit.edu">
-                    szubieta2023@my.fit.edu
-                </a>
-            </p>
-
-            <p>
-                <strong>Samuel Borges</strong> -
-                <a href="mailto:borgess2023@my.fit.edu">
-                    borgess2023@my.fit.edu
-                </a>
-            </p>
-
-            <p>
-                <strong>Elif Dila Bayrak</strong> -
-                <a href="mailto:ebayrak2025@my.fit.edu">
-                    ebayrak2025@my.fit.edu
-                </a>
-            </p>
-
-        </section>
-
-
-        <!-- FACULTY ADVISOR -->
-
-        <section id="advisor">
-
-            <h2>Faculty Advisor</h2>
-
-            <p>
-                Dr. Zahra Nematzadeh
-            </p>
-
-        </section>
+        <div class="info-row">
+        
+            <section id="team">
+        
+                <h2>Team Members</h2>
+        
+                <p>
+                    <strong>Neva Ildem</strong> -
+                    <a href="mailto:zildem2023@my.fit.edu">
+                        zildem2023@my.fit.edu
+                    </a>
+                </p>
+        
+                <p>
+                    <strong>Sophia Zubieta</strong> -
+                    <a href="mailto:szubieta2023@my.fit.edu">
+                        szubieta2023@my.fit.edu
+                    </a>
+                </p>
+        
+                <p>
+                    <strong>Samuel Borges</strong> -
+                    <a href="mailto:borgess2023@my.fit.edu">
+                        borgess2023@my.fit.edu
+                    </a>
+                </p>
+        
+                <p>
+                    <strong>Elif Dila Bayrak</strong> -
+                    <a href="mailto:ebayrak2025@my.fit.edu">
+                        ebayrak2025@my.fit.edu
+                    </a>
+                </p>
+        
+            </section>
+        
+        
+            <section id="advisor">
+        
+                <h2>Faculty Advisor</h2>
+        
+                <p>
+                    Dr. Zahra Nematzadeh
+                </p>
+        
+            </section>
+        
+        </div>
 
 
         <!-- MILESTONES -->
