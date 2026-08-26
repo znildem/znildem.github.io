@@ -331,19 +331,72 @@
         }
 
         @media (max-width: 850px) {
-            .hero {
-                flex-direction: column;
-                text-align: center;
-            }
 
+            body {
+                overflow-x: hidden;
+            }
+        
+            nav {
+                padding: 18px 24px;
+            }
+        
             .nav-links {
                 gap: 20px;
                 flex-wrap: wrap;
                 justify-content: flex-end;
             }
-
+        
+            .hero {
+                flex-direction: column;
+                text-align: center;
+                gap: 35px;
+                padding: 50px 24px;
+                min-height: auto;
+            }
+        
+            .hero-text {
+                max-width: 100%;
+            }
+        
             .hero h1 {
                 font-size: 42px;
+                line-height: 1.08;
+            }
+        
+            .hero p {
+                font-size: 18px;
+                line-height: 1.6;
+            }
+        
+            .hero-visual {
+                width: 100%;
+                box-sizing: border-box;
+                min-height: auto;
+                padding: 25px 15px;
+            }
+        
+            .phone-mockup {
+                width: 100%;
+                max-width: 290px;
+                box-sizing: border-box;
+            }
+        
+            main {
+                width: 100%;
+                box-sizing: border-box;
+                margin: 30px auto;
+                padding: 0 24px;
+            }
+        
+            .info-row {
+                grid-template-columns: 1fr;
+                gap: 25px;
+            }
+        
+            section {
+                box-sizing: border-box;
+                width: 100%;
+                padding: 24px;
             }
         }
     </style>
