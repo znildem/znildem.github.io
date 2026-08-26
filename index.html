@@ -127,6 +127,129 @@
             color: #b9c9d9;
             line-height: 1.5;
         }
+        .phone-mockup {
+            width: 290px;
+            background-color: #07111f;
+            border: 2px solid #2e89a8;
+            border-radius: 28px;
+            padding: 10px;
+            box-shadow: 0 20px 45px rgba(0, 0, 0, 0.4);
+        }
+        
+        .phone-top {
+            text-align: center;
+            color: #62d6e3;
+            font-size: 13px;
+            letter-spacing: 1px;
+            padding: 8px 0 12px 0;
+        }
+        
+        .phone-screen {
+            background: linear-gradient(180deg, #101a2a, #0b1726);
+            border-radius: 20px;
+            padding: 22px;
+            text-align: left;
+        }
+        
+        .phone-screen h3 {
+            text-align: center;
+            color: white;
+            margin: 0 0 20px 0;
+            font-size: 23px;
+        }
+        
+        .image-placeholder {
+            height: 125px;
+            border: 1px dashed #62d6e3;
+            border-radius: 12px;
+            background:
+                radial-gradient(
+                    circle at center,
+                    rgba(98, 214, 227, 0.18),
+                    transparent 55%
+                );
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #9fcbd4;
+            margin-bottom: 18px;
+        }
+        
+        .analysis-status {
+            color: #b9c9d9;
+            font-size: 14px;
+            margin-bottom: 16px;
+        }
+        
+        .status-dot {
+            display: inline-block;
+            width: 9px;
+            height: 9px;
+            background-color: #62d6e3;
+            border-radius: 50%;
+            margin-right: 6px;
+        }
+        
+        .result-card {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #102b3c;
+            border: 1px solid #245c70;
+            border-radius: 10px;
+            padding: 13px;
+            margin-bottom: 16px;
+        }
+        
+        .result-label {
+            color: #b9c9d9;
+            font-size: 13px;
+        }
+        
+        .result-card strong {
+            color: #62d6e3;
+            font-size: 18px;
+        }
+        
+        .confidence {
+            color: #b9c9d9;
+            font-size: 12px;
+            margin-bottom: 18px;
+        }
+        
+        .confidence-bar {
+            height: 7px;
+            background-color: #203348;
+            border-radius: 10px;
+            margin: 8px 0;
+            overflow: hidden;
+        }
+        
+        .confidence-fill {
+            width: 82%;
+            height: 100%;
+            background: linear-gradient(90deg, #2e89a8, #62d6e3);
+        }
+        
+        .concept-button {
+            width: 100%;
+            border: none;
+            background-color: #2e89a8;
+            color: white;
+            padding: 11px;
+            border-radius: 8px;
+            font-family: "Times New Roman", Times, serif;
+            font-size: 15px;
+            cursor: default;
+        }
+        
+        .concept-disclaimer {
+            text-align: center;
+            color: #8293a6 !important;
+            font-size: 11px !important;
+            line-height: 1.4 !important;
+            margin: 13px 0 0 0 !important;
+        }
 
         main {
             max-width: 1100px;
@@ -273,19 +396,54 @@
 
         </div>
 
-
         <div class="hero-visual">
 
-            <div>
-                <h3>Mobile + Machine Learning</h3>
-
-                <p>
-                    Image capture, lesion analysis, prediction visualization,
-                    and long-term skin health monitoring in one accessible
-                    system.
-                </p>
+            <div class="phone-mockup">
+        
+                <div class="phone-top">
+                    <span>Application Concept</span>
+                </div>
+        
+                <div class="phone-screen">
+        
+                    <h3>Skin Lesion Analysis</h3>
+        
+                    <div class="image-placeholder">
+                        <span>Skin Lesion Image</span>
+                    </div>
+        
+                    <div class="analysis-status">
+                        <span class="status-dot"></span>
+                        AI Analysis Complete
+                    </div>
+        
+                    <div class="result-card">
+                        <span class="result-label">Preliminary Result</span>
+                        <strong>Benign</strong>
+                    </div>
+        
+                    <div class="confidence">
+                        <span>Prediction Confidence</span>
+        
+                        <div class="confidence-bar">
+                            <div class="confidence-fill"></div>
+                        </div>
+        
+                        <span>Example Visualization</span>
+                    </div>
+        
+                    <button class="concept-button">
+                        Track Progress
+                    </button>
+        
+                    <p class="concept-disclaimer">
+                        Concept interface only — not a medical diagnosis.
+                    </p>
+        
+                </div>
+        
             </div>
-
+        
         </div>
 
     </section>
