@@ -8,7 +8,7 @@
     <title>Skin Cancer Detection | Senior Design Project</title>
 
     <style>
-       body {
+        body {
             font-family: "Times New Roman", Times, serif;
             margin: 0;
             background-color: #060b18;
@@ -46,40 +46,109 @@
             color: #55c7d4;
         }
 
-        header {
-            background-color: #1f6f78;
+        .hero {
+            min-height: 520px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 50px;
+            padding: 70px 8%;
+            background: linear-gradient(135deg, #07111f, #0b1830);
+        }
+
+        .hero-text {
+            flex: 1;
+            max-width: 650px;
+        }
+
+        .hero-label {
+            display: inline-block;
+            color: #62d6e3;
+            font-size: 14px;
+            letter-spacing: 2px;
+            margin-bottom: 18px;
+            font-weight: bold;
+        }
+
+        .hero h1 {
+            font-size: 58px;
+            line-height: 1.05;
+            margin: 0 0 25px 0;
             color: white;
+        }
+
+        .hero p {
+            font-size: 20px;
+            line-height: 1.7;
+            color: #d5deea;
+            margin-bottom: 30px;
+        }
+
+        .hero-button {
+            display: inline-block;
+            background-color: #2e89a8;
+            color: white;
+            text-decoration: none;
+            padding: 14px 24px;
+            border-radius: 6px;
+            font-size: 16px;
+        }
+
+        .hero-button:hover {
+            background-color: #3ca9c7;
+        }
+
+        .hero-visual {
+            flex: 1;
+            min-height: 340px;
+            border-radius: 20px;
+            background:
+                radial-gradient(circle at 30% 30%, rgba(85, 199, 212, 0.35), transparent 35%),
+                linear-gradient(135deg, #10243c, #163d56);
+            border: 1px solid rgba(98, 214, 227, 0.3);
+            display: flex;
+            align-items: center;
+            justify-content: center;
             text-align: center;
-            padding: 40px 20px;
+            padding: 30px;
         }
 
-        header h1 {
-            margin: 0;
-            font-size: 42px;
+        .hero-visual h3 {
+            font-size: 28px;
+            margin-bottom: 12px;
         }
 
-        header p {
-            font-size: 18px;
+        .hero-visual p {
+            font-size: 17px;
+            color: #b9c9d9;
+            line-height: 1.5;
         }
 
         main {
-            max-width: 1000px;
-            margin: 30px auto;
+            max-width: 1100px;
+            margin: 50px auto;
             padding: 0 20px;
         }
+
         section {
-            background-color: white;
-            color: #222;
-            margin-bottom: 25px;
-            padding: 25px;
-            border-radius: 10px;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+            background-color: #101a2a;
+            color: white;
+            margin-bottom: 30px;
+            padding: 30px;
+            border-radius: 14px;
+            border: 1px solid #1d3147;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
         }
 
         h2 {
-            color: #1f6f78;
-            border-bottom: 2px solid #1f6f78;
-            padding-bottom: 8px;
+            color: #62d6e3;
+            border-bottom: 2px solid #2e89a8;
+            padding-bottom: 10px;
+        }
+
+        section p {
+            color: #d5deea;
+            line-height: 1.6;
         }
 
         .team-member {
@@ -87,14 +156,31 @@
         }
 
         a {
-            color: #1f6f78;
+            color: #62d6e3;
         }
 
         footer {
             text-align: center;
             padding: 20px;
-            color: #666;
+            color: #9aa8b8;
             font-size: 14px;
+        }
+
+        @media (max-width: 850px) {
+            .hero {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .nav-links {
+                gap: 20px;
+                flex-wrap: wrap;
+                justify-content: flex-end;
+            }
+
+            .hero h1 {
+                font-size: 42px;
+            }
         }
     </style>
 </head>
@@ -114,21 +200,45 @@
         </div>
     </nav>
 
-    <header>
-        <h1>Skin Cancer Detection</h1>
-        <p>Florida Institute of Technology Senior Design Project</p>
-    </header>
+    <section class="hero" id="overview">
+
+        <div class="hero-text">
+            <div class="hero-label">
+                AI-POWERED SKIN CANCER DETECTION
+            </div>
+
+            <h1>
+                Supporting Early Awareness Through Machine Learning
+            </h1>
+
+            <p>
+                Skin cancer is one of the most common and potentially fatal cancers worldwide,
+                making early detection especially important. This project aims to develop an
+                accessible mobile application that uses machine learning to analyze skin lesion
+                images and provide preliminary real-time predictions of whether a lesion may be
+                benign or malignant. The app is also intended to help users monitor changes in
+                their skin health over time while encouraging appropriate medical consultation
+                when needed.
+            </p>
+
+            <a class="hero-button" href="#team">
+                Meet the Project Team
+            </a>
+        </div>
+
+        <div class="hero-visual">
+            <div>
+                <h3>Mobile + Machine Learning</h3>
+                <p>
+                    Image capture, lesion analysis, prediction visualization,
+                    and long-term skin health monitoring in one accessible system.
+                </p>
+            </div>
+        </div>
+
+    </section>
 
     <main>
-
-        <section id="overview">
-            <h2>Project Overview</h2>
-            <p>
-                Welcome to the Skin Cancer Detection senior design project.
-                This website will document our project's development,
-                milestones, presentations, and deliverables.
-            </p>
-        </section>
 
         <section id="team">
             <h2>Team Members</h2>
@@ -146,7 +256,10 @@
 
         <section id="milestones">
             <h2>Milestones</h2>
-            <p>Project milestones and deliverables will be added as the project progresses.</p>
+            <p>
+                Project milestones, presentations, progress evaluations,
+                and supporting documents will be added as the project progresses.
+            </p>
         </section>
 
     </main>
