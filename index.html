@@ -432,6 +432,68 @@
                 padding: 24px;
             }
         }
+
+            .milestones-preview {      /* Milestone card */
+        background:
+            linear-gradient(
+                135deg,
+                #101f32,
+                #0b2336
+            );
+        border: 1px solid #245c70;
+        overflow: hidden;
+        position: relative;
+    }
+    
+    .milestones-content {     /* Content */
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 35px;
+    }
+    
+    .section-label {
+        display: block;
+        color: #f28c8c;
+        font-size: 12px;
+        letter-spacing: 2px;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+    
+    .milestones-preview h2 {
+        margin-top: 0;
+        margin-bottom: 15px;
+    }
+    
+    .milestones-preview p {
+        max-width: 700px;
+        margin-bottom: 0;
+    }
+    
+    .milestones-button {
+        flex-shrink: 0;
+        display: inline-flex;
+        align-items: center;
+        gap: 12px;
+        background-color: #2e89a8;
+        color: white;
+        text-decoration: none;
+        padding: 14px 20px;
+        border-radius: 8px;
+        font-size: 15px;
+        transition: background-color 0.2s ease, transform 0.2s ease;
+    }
+    
+    .milestones-button:hover { /* Lift effect */
+        background-color: #3ca9c7;
+        transform: translateY(-2px);
+    }
+    
+    .milestones-button span {
+        font-size: 20px;
+    }
     </style>
 </head>
 
