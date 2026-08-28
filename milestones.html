@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Project Milestones | Skin Cancer Detection</title>
+
+    <style>
+        body {
+            font-family: "Times New Roman", Times, serif;
+            margin: 0;
+            background-color: #060b18;
+            color: white;
+        }
+
+        nav {
+            background-color: #07111f;
+            padding: 20px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-brand {
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        nav a {
+            color: #62d6e3;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        nav a:hover {
+            color: white;
+        }
+
+        main {
+            max-width: 1000px;
+            margin: 60px auto;
+            padding: 0 25px;
+        }
+
+        .page-header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .page-header span {
+            color: #f28c8c;
+            font-size: 13px;
+            letter-spacing: 2px;
+            font-weight: bold;
+        }
+
+        .page-header h1 {
+            font-size: 48px;
+            margin: 15px 0;
+        }
+
+        .page-header p {
+            color: #b9c9d9;
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        .milestone {
+            background-color: #101a2a;
+            border: 1px solid #1d3147;
+            border-radius: 14px;
+            padding: 25px 30px;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 30px;
+        }
+
+        .milestone-info {
+            flex: 1;
+        }
+
+        .milestone-number {
+            color: #62d6e3;
+            font-size: 13px;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        .milestone h2 {
+            margin: 8px 0;
+            color: white;
+        }
+
+        .milestone p {
+            color: #b9c9d9;
+            line-height: 1.5;
+            margin: 0;
+        }
+
+        .download-button {
+            flex-shrink: 0;
+            background-color: #2e89a8;
+            color: white;
+            text-decoration: none;
+            padding: 12px 18px;
+            border-radius: 7px;
+            transition: background-color 0.2s ease;
+        }
+
+        .download-button:hover {
+            background-color: #3ca9c7;
+        }
+
+        .back-link {
+            flex-shrink: 0;
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            background-color: #2e89a8;
+            color: white;
+            text-decoration: none;
+            padding: 14px 20px;
+            border-radius: 8px;
+            font-size: 15px;
+            transition: background-color 0.2s ease, transform 0.2s ease;
+        }
+
+        .back-link:hover {
+            background-color: #102b3c;
+            transform: translateY(-2px);
+        }
+
+        @media (max-width: 700px) {
+
+            nav {
+                padding: 18px 24px;
+            }
+
+            main {
+                margin: 40px auto;
+                padding: 0 20px;
+            }
+
+            .page-header h1 {
+                font-size: 38px;
+            }
+
+            .milestone {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .download-button {
+                width: 100%;
+                box-sizing: border-box;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <div class="nav-brand">
+            Skin Cancer Detection
+        </div>
+
+        <a href="index.html">
+            Back to Home
+        </a>
+    </nav>
+
+    <main>
+
+        <div class="page-header">
+
+            <h1>Project Milestones</h1>
+
+            <p>
+                Explore our documentation and progression timeline of our senior design project.
+            </p>
+
+        </div>
+
+
+        <div class="milestone">
+
+            <div class="milestone-info">
+
+                <div class="milestone-number">
+                    PROJECT PLAN
+                </div>
+
+                <h2>Project Planning</h2>
+
+                <p>
+                    Initial project planning, objectives, requirements,
+                    and project scope.
+                </p>
+
+            </div>
+
+            <a href="documents/project_plan.pdf"
+               class="download-button"
+               download>
+                Download Plan
+            </a> <!--link for download plan here-->
+
+        </div>
+
+
+        <div class="milestone">
+
+            <div class="milestone-info">
+
+                <div class="milestone-number">
+                    MILESTONE 01
+                </div>
+
+                <h2>Requirements & Testing</h2>
+
+                <p>
+                    Tool selection and test plan.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="milestone">
+
+            <div class="milestone-info">
+
+                <div class="milestone-number">
+                    MILESTONE 02
+                </div>
+
+                <h2>Future Development and Testing</h2>
+
+                <p>
+                    Implementing features and demos.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="milestone">
+
+            <div class="milestone-info">
+
+                <div class="milestone-number">
+                    MILESTONE 03
+                </div>
+
+                <h2>Future Development and Testing</h2>
+
+                <p>
+                    Continued implementation and testing.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <a href="index.html" class="back-link">
+            ← Return to Project Home
+        </a>
+
+    </main>
+
+</body>
+
+</html>
