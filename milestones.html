@@ -116,6 +116,18 @@
             background-color: #3ca9c7;
         }
 
+        .milestone-documents {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: flex-end;
+            max-width: 480px;
+        }
+
+        .milestone-documents .download-button {
+            text-align: center;
+        }
+
         .back-link {
             flex-shrink: 0;
             display: inline-flex;
@@ -159,6 +171,17 @@
                 width: 100%;
                 box-sizing: border-box;
                 text-align: center;
+            }
+
+            .milestone-documents {
+                width: 100%;
+                max-width: none;
+                flex-direction: column;
+            }
+
+            .milestone-documents .download-button {
+                width: 100%;
+                box-sizing: border-box;
             }
         }
     </style>
@@ -234,6 +257,40 @@
                 <p>
                     Tool selection and test plan.
                 </p>
+
+            </div>
+
+            <div class="milestone-documents">
+
+                <a href="documents/milestone1_requirements.pdf"
+                   class="download-button"
+                   download>
+                    Requirements Document
+                </a>
+
+                <a href="documents/milestone1_design.pdf"
+                   class="download-button"
+                   download>
+                    Design Document
+                </a>
+
+                <a href="documents/milestone1_test_plan.pdf"
+                   class="download-button"
+                   download>
+                    Test Plan
+                </a>
+
+                <a href="documents/milestone1_progress_evaluation.pdf"
+                   class="download-button"
+                   download>
+                    Progress Evaluation
+                </a>
+
+                <a href="documents/milestone1_presentation.pdf"
+                   class="download-button"
+                   download>
+                    Presentation
+                </a>
 
             </div>
 
